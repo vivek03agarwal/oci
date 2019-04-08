@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
       - name: react-kubernetes-front-end
-        image: ${DOCKER_REPO}/${IMAGE_NAME}:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
+        image: $PRIVATE_REGISTRY_PATH/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
         ports:
         - containerPort: 5000
